@@ -1,0 +1,36 @@
+package com.eureka.member.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@EnableEurekaClient
+@SpringBootApplication
+public class SpringEurekaMemberApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringEurekaMemberApplication.class, args);
+	}
+
+}
+
+@RestController
+class MemberRestController {
+	 @RequestMapping(value = "list", method = RequestMethod.GET, produces = "application/json")
+
+     public List<Member> getMembers() {
+
+           List<Member> members = Arrays.asList(
+
+new Member(1, "Nguyen Van A "),
+
+new Member(2, "Nguyen Van B "),
+
+                  new Member(3, "Nguyen Van C "));
+
+           return members;
+
+     }
+}

@@ -1,0 +1,4 @@
+# Give a name 
+spring.application.name=member-service 
+server.port=8202
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka

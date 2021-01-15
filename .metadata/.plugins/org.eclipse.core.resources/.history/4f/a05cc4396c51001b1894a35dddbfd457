@@ -1,0 +1,23 @@
+package com.eureka.team.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.web.bind.annotation.RestController;
+
+
+@EnableEurekaClient
+@SpringBootApplication
+public class SpringEurekaTeamApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringEurekaTeamApplication.class, args);
+	}
+
+}
+
+
+@RestController
+class TeamRestController {
+	@RequestMapping(value = "list", method = RequestMethod.GET, produces = "application/json");
+}

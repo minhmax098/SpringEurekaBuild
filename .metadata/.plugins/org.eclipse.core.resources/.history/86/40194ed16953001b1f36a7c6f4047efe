@@ -1,0 +1,14 @@
+
+# Give a name to the eureka server
+spring.application.name=eureka-server
+
+# default port for eureka server
+server.port=8761
+
+# eureka by default will register itself as a client. 
+# we need to set 
+# what's a client server ? 
+eureka.client.register-with-eureka=false 
+eureka.client.fetch-registry=false 
+
+# với cấu hình này thì eurka-server sẽ chạy trên port 8761
