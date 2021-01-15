@@ -2,7 +2,7 @@
 
 Introduction: 
 - This system need to create service registry, team service, member service and a gateway
-- The team service will contain the memmber from member service
+- The team service will contain the member from member service
 - And organise / sort them into the team service.
 - The Spring boot version will use, is 2.3.7.RELEASE 
 
